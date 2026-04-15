@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔥 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔥 GLOBAL BACKGROUND (LIQUID DARK) */
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+
+  background: radial-gradient(
+    circle at center,
+    #1e2a55 0%,
+    #0b1220 40%,
+    #020617 100%
+  );
+}
+
+/* 🔥 CENTER ROOT */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔥 REUSABLE INPUT */
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  outline: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus {
+  border-color: #3b82f6;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* 🔥 BUTTON PRIMARY */
+.btn-primary {
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* 🔥 GLASS CARD */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+}
+
+/* 🔥 TABLE */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+}
+
+thead {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 🔥 SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
